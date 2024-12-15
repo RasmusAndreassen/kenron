@@ -1,0 +1,7 @@
+.Point {
+	&#base {
+		&:hover {
+			cursor: grab;
+		}
+	}
+}

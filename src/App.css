@@ -1,0 +1,32 @@
+#App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  code {
+    font-family: 'Fira Code Light';
+    font-variant-ligatures: normal;
+  }
+
+  > .definitions {
+    display: grid;
+    grid-template-columns: repeat(2, auto) 250px;
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+
+  &.grabbing {
+    &, & *{
+      cursor: grabbing !important;
+    }
+  }
+  svg {
+    width: 50dvh;
+    aspect-ratio: 1 / 1;
+  }
+  color: white;
+}
